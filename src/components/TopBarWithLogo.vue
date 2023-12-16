@@ -19,7 +19,7 @@ export default {
 
 
   <v-spacer></v-spacer>
-  <v-avatar  color="grey-darken-1" class="mr-6 d-flex justify-center align-center" size="32"></v-avatar>
+ 
   
   <RouterLink custom v-slot="{ navigate }" to="/"> <v-btn 
       :active="$route.name === 'home'" variant="text" @click="navigate">Home</v-btn>

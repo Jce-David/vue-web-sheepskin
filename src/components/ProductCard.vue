@@ -30,14 +30,11 @@ export default {
         </v-card-title>
         
         <v-card-actions>
-            <RouterLink custom  v-slot="{navigate}" 
-            v-for="product in products" :key="product.id" :to="'/product/' + product.id"
-            >
+            <RouterLink to="/"  custom  v-slot="{navigate}" > 
                 <v-btn color="red" @click="navigate" block >
                     Agregar al Carrito
                 </v-btn>
-                   
-                </RouterLink>
+            </RouterLink>
         </v-card-actions>
     </v-card>
 </template>

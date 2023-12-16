@@ -11,11 +11,17 @@ export default {
     ...mapState(useProductsStore, ['products'])
   }
 }
-
 </script>
 
 <template>
-  <v-col  cols="4"  v-for="product in products" :key="product.id"  >
+  
+
+  <v-col 
+      :sm="6"
+      :xs="12"
+      :md="4"
+      v-for="product in products" 
+      :key="product.id"  >
     <ProductCard  :product="product"  />
     
   </v-col>
